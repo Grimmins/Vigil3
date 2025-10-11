@@ -1,0 +1,2 @@
+# LintKey
+hardhat plugin
