@@ -1,14 +1,14 @@
 {
-  "name": "hardhat-myplugin",
+  "name": "hardhat-vigil3",
   "version": "1.0.0",
-  "description": "Exemple de plugin Hardhat minimal",
+  "description": "vigil3 plugin solidity security with slither",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "npx hardhat test",
     "lint": "eslint src test --ext .ts"
   },
-  "keywords": ["hardhat", "plugin", "ethereum", "solidity"],
+  "keywords": ["hardhat", "plugin", "ethereum", "solidity", "security"],
   "author": "Ton Nom",
   "license": "MIT",
   "devDependencies": {

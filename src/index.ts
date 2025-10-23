@@ -4,7 +4,7 @@ import "./tasks";
 import "./type-extensions";
 
 extendEnvironment((hre: HardhatRuntimeEnvironment) => {
-  hre.LintKey = {
+  hre.vigil3 = {
     sayHello() {
       console.log("Hello World !");
     },

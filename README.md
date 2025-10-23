@@ -1,3 +1,3 @@
-# LintKey
+# vigil3
 
 hardhat plugin
