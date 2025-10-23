@@ -29,7 +29,11 @@ jobs:
 
       - name: Build Slither binary
         run: |
-          pyinstaller --onefile $(which slither || where slither)
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+            pyinstaller --onefile -n slither -c "from slither.__main__ import main; main()"
+          else
+            pyinstaller --onefile $(which slither)
+          fi
         shell: bash
 
       - name: Rename binary for OS
