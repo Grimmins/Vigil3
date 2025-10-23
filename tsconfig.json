@@ -10,5 +10,7 @@
     "resolveJsonModule": true,
     "types": ["hardhat/types"]
   },
-  "include": ["src", "test", "hardhat.config.ts"]
+  "include": ["src", "test",
+    "test-project/hardhat.config.ts"
+  ]
 }

@@ -1,22 +1,29 @@
 {
   "name": "hardhat-vigil3",
   "version": "1.0.0",
-  "description": "vigil3 plugin solidity security with slither",
+  "description": "vigil3 : hardhat plugin for solidity security with slither",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
+    "postinstall": "node bin/postinstall.js",
     "test": "npx hardhat test",
     "lint": "eslint src test --ext .ts"
   },
-  "keywords": ["hardhat", "plugin", "ethereum", "solidity", "security"],
-  "author": "Ton Nom",
+  "keywords": [
+    "hardhat",
+    "plugin",
+    "ethereum",
+    "solidity",
+    "security"
+  ],
+  "author": "Grimmins",
   "license": "MIT",
   "devDependencies": {
-    "hardhat": "^2.22.0",
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.2",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "eslint": "^8.56.0",
-    "prettier": "^3.1.0"
+    "hardhat": "^2.26.3",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
