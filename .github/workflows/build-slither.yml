@@ -30,7 +30,10 @@ jobs:
       - name: Build Slither binary
         run: |
           if [[ "$RUNNER_OS" == "Windows" ]]; then
-            pyinstaller --onefile -n slither -c "from slither.__main__ import main; main()"
+            echo "from slither.__main__ import main" > slither_entry.py
+            echo "if __name__ == '__main__':" >> slither_entry.py
+            echo "    main()" >> slither_entry.py
+            pyinstaller --onefile --name slither slither_entry.py
           else
             pyinstaller --onefile $(which slither)
           fi
