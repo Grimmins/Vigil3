@@ -1,4 +1,6 @@
 node_modules/
 venv/
 .idea/*
-
+.DS_Store
+dist/*
+.npmignore

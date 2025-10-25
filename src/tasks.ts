@@ -3,7 +3,7 @@ import { runSlither } from "./slither-runner";
 import {TASK_COMPILE} from "hardhat/builtin-tasks/task-names";
 import {enforceVulnerabilitiesGuard} from "./guard";
 
-task("hello", "hello from plugin :)").setAction(async (_, hre) => {
+task("v3", "vigil3 is up :)").setAction(async (_, hre) => {
   hre.vigil3.sayHello();
 });
 
